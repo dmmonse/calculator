@@ -6,6 +6,20 @@
   font-family: sans-serif;
   outline: none;
 }
+h1{
+  font-size: 100px;
+  text-align: center;
+  color:#ecf0f3;
+  text-shadow:5px 5px 12px #969696,
+  5px 5px 12px rgba(0, 0,0,.16);
+}
+h2{
+  font-size: 50px;
+  text-align: center;
+  color:#ecf0f3;
+  text-shadow:5px 5px 12px #878787,
+  5px 5px 12px rgba(0, 0,0,.16);
+}
 .container{
   height:100vh;
   display: flex;
