@@ -2,23 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ecf0f3;
+  background-color: #d4e7ff;
   font-family: sans-serif;
   outline: none;
 }
 h1{
   font-size: 100px;
   text-align: center;
-  color:#ecf0f3;
-  text-shadow:5px 5px 12px #969696,
+  color:#202f9e;
+  text-shadow:5px 5px 12px #a9b8d0,
   5px 5px 12px rgba(0, 0,0,.16);
 }
 h2{
   font-size: 50px;
   text-align: center;
-  color:#ecf0f3;
-  text-shadow:5px 5px 12px #878787,
-  5px 5px 12px rgba(0, 0,0,.16);
+  color:#5468ff;
 }
 .container{
   height:100vh;
@@ -27,11 +25,12 @@ h2{
   align-items: center;
 }
 .calculator{
-  background-color: #ecf0f3;
+  background-image: radial-gradient(100% 100% at 100% 0,
+   #5adaff 0, #5468ff 100%);
   padding: 15px;
   border-radius: 30px;
-  box-shadow: inset 5px 5px 12px #ffffff,
-           5px 5px 12px rgba(0, 0,0,.16);
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3)
+  0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
            display: grid;
            grid-template-columns: repeat(4,70px);
 }
@@ -55,9 +54,11 @@ input{
 button{
   height:48px;
   width: 48px;
-  background-color: #ecf0f3;
-  box-shadow: -5px -5px 12px #ffffff,
-           5px 5px 12px rgba(0, 0, 0, .16);
+           background-image: radial-gradient(100% 100% at 100% 0,
+           #5adaff 0, #5468ff 100%);
+           box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3)
+  0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  color: #fff;
            border: none;
            border-radius: 50%;
            margin: 8px;
@@ -66,8 +67,42 @@ button{
 .equal{
   width: 115px;
   border-radius: 40px;
-  background-color: #ecf0f3;
-  box-shadow: -5px -5px 12px #ffffff,
-           5px 5px 12px rgba(0, 0, 0, .16);
+  background-image: radial-gradient(100% 100% at 100% 0,
+           #5adaff 0, #5468ff 100%);
+           box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3)
+  0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  color: #fff;
 
+}
+h3{
+  font-size: 15px;
+  text-align: left;
+  padding-left: 15px;
+  color:#5468ff;
+}
+
+/** msg button**/
+button[type=msg]{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0,
+   #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3)
+   0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 50px;
+  width: 70px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left:30px;
+  text-align: center;
+  font-size: 18px;
 }
