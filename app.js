@@ -25,3 +25,16 @@ function Clear(){
 function del(){
     outputScreen.value = outputScreen.value.slice(0,-1);
 }
+//msg before open//
+function openMsg() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("msg").innerHTML =
+        this.responseText;
+      }
+    };
+    //msg after open//
+    xhttp.open("GET", "hidden_msg.txt", true);
+    xhttp.send();
+  }
